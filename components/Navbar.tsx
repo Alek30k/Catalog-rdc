@@ -3,6 +3,7 @@
 import { Gift, Menu, ShoppingCart, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { CartDrawer } from "./cart/CartDrawer";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -66,13 +67,9 @@ export function Navbar() {
             >
               <Mail className="w-5 h-5" />
             </a>
-            <Button
-              size="sm"
-              className="bg-gradient-to-r from-primary to-secondary"
-            >
-              <ShoppingCart className="w-4 h-4 mr-2" />
-              Carrito
-            </Button>
+            <div className="flex items-center">
+              <CartDrawer />
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -130,13 +127,9 @@ export function Navbar() {
                 >
                   <Mail className="w-5 h-5" />
                 </a>
-                <Button
-                  size="sm"
-                  className="bg-gradient-to-r from-primary to-secondary flex-1"
-                >
-                  <ShoppingCart className="w-4 h-4 mr-2" />
-                  Carrito
-                </Button>
+                <div className="flex items-center ">
+                  <CartDrawer />
+                </div>
               </div>
             </div>
           </div>

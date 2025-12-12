@@ -1,15 +1,2585 @@
-[00:00:00.733] Server  LOG     
-[00:00:00.733] Server  LOG        We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
-[00:00:00.734] Server  LOG        The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+[00:00:00.843] Server  LOG      ✓ Ready in 533ms
+[00:00:04.484] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
-[00:00:00.734] Server  LOG        	- include was updated to add '.next/dev/types/**/*.ts'
-[00:00:00.734] Server  LOG     
-[00:00:00.734] Server  LOG        The following mandatory changes were made to your tsconfig.json:
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
 
-[00:00:00.734] Server  LOG        	- jsx was set to react-jsx (next.js uses the React automatic runtime)
-[00:00:00.734] Server  LOG     
-[00:00:00.842] Server  LOG      ✓ Ready in 544ms
-[00:00:05.959] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_23cae0f7-d3c9-42c9-bc4c-0073fff318a2__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                            ...
+                              <SegmentViewNode type="page" pagePath="page.tsx">
+                                <SegmentTrieNode>
+                                <Home>
+                                  <div className="min-h-scre...">
+                                    <Navbar>
+                                    <Container>
+                                      <div className="max-w-scre...">
+                                        ...
+                                          <div className="grid grid-...">
+                                            <ProductCard>
+                                            <ProductCard>
+                                            <ProductCard>
+                                            <ProductCard>
+                                            <ProductCard>
+                                            <ProductCard>
+                                            <ProductCard>
+                                            <ProductCard product={{id:8,name:"Jab...", ...}}>
+                                              <Card className="overflow-h..." onClick={function onClick}>
+                                                <div
+                                                  data-slot="card"
+                                                  className="bg-card text-card-foreground flex flex-col gap-6 rounded-..."
+                                                  onClick={function onClick}
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <CardContent className="p-6">
+                                                    <div
+                                                      data-slot="card-content"
+                                                      className="p-6"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+                                                        className="relative mb-6"
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                        <div
+                                                          className="relative aspect-square w-full overflow-hidden rou..."
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                      <div
+                                                        className="space-y-4"
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                        <div
+                                                          className="flex items-baseline gap-2"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                        ...
+                                              ...
+                                            <ProductCard product={{id:9,name:"Jab...", ...}}>
+                                              <Card className="overflow-h..." onClick={function onClick}>
+                                                <div
+                                                  data-slot="card"
+                                                  className="bg-card text-card-foreground flex flex-col gap-6 rounded-..."
+                                                  onClick={function onClick}
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <CardContent className="p-6">
+                                                    <div
+                                                      data-slot="card-content"
+                                                      className="p-6"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+                                                        className="relative mb-6"
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                        <Badge>
+                                                        <div
+                                                          className="relative aspect-square w-full overflow-hidden rou..."
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                      <div
+                                                        className="space-y-4"
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                        <div
+                                                          className="flex items-baseline gap-2"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                        ...
+                                              ...
+                                            <ProductCard product={{id:10,name:"Ja...", ...}}>
+                                              <Card className="overflow-h..." onClick={function onClick}>
+                                                <div
+                                                  data-slot="card"
+                                                  className="bg-card text-card-foreground flex flex-col gap-6 rounded-..."
+                                                  onClick={function onClick}
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <CardContent className="p-6">
+                                                    <div
+                                                      data-slot="card-content"
+                                                      className="p-6"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+                                                        className="relative mb-6"
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                        <div
+                                                          className="relative aspect-square w-full overflow-hidden rou..."
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                      <div
+                                                        className="space-y-4"
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                        <div
+                                                          className="flex items-baseline gap-2"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                        ...
+                                              ...
+                                            <ProductCard product={{id:11,name:"Ja...", ...}}>
+                                              <Card className="overflow-h..." onClick={function onClick}>
+                                                <div
+                                                  data-slot="card"
+                                                  className="bg-card text-card-foreground flex flex-col gap-6 rounded-..."
+                                                  onClick={function onClick}
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <CardContent className="p-6">
+                                                    <div
+                                                      data-slot="card-content"
+                                                      className="p-6"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+                                                        className="relative mb-6"
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                        <Badge>
+                                                        <div
+                                                          className="relative aspect-square w-full overflow-hidden rou..."
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                      <div
+                                                        className="space-y-4"
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                        <div
+                                                          className="flex items-baseline gap-2"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                        ...
+                                              ...
+                                            <ProductCard product={{id:12,name:"Pr...", ...}}>
+                                              <Card className="overflow-h..." onClick={function onClick}>
+                                                <div
+                                                  data-slot="card"
+                                                  className="bg-card text-card-foreground flex flex-col gap-6 rounded-..."
+                                                  onClick={function onClick}
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <CardContent className="p-6">
+                                                    <div
+                                                      data-slot="card-content"
+                                                      className="p-6"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+                                                        className="relative mb-6"
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                        <Badge>
+                                                        <div
+                                                          className="relative aspect-square w-full overflow-hidden rou..."
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                      <div
+                                                        className="space-y-4"
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                        <div
+                                                          className="flex items-baseline gap-2"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                        ...
+                                              ...
+                                            <ProductCard product={{id:13,name:"Pr...", ...}}>
+                                              <Card className="overflow-h..." onClick={function onClick}>
+                                                <div
+                                                  data-slot="card"
+                                                  className="bg-card text-card-foreground flex flex-col gap-6 rounded-..."
+                                                  onClick={function onClick}
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <CardContent className="p-6">
+                                                    <div
+                                                      data-slot="card-content"
+                                                      className="p-6"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+                                                        className="relative mb-6"
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                        <Badge>
+                                                        <div
+                                                          className="relative aspect-square w-full overflow-hidden rou..."
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                      <div
+                                                        className="space-y-4"
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                        <div
+                                                          className="flex items-baseline gap-2"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                        ...
+                                              ...
+                                        <CustomSoapSection>
+                                          <section className="py-12 md:p...">
+                                            <div
+                                              className="container mx-auto px-4"
+-                                             bis_skin_checked="1"
+                                            >
+                                              <div
+                                                className="grid md:grid-cols-2 gap-8 items-center"
+-                                               bis_skin_checked="1"
+                                              >
+                                                <div
+                                                  className="relative aspect-video md:aspect-square rounded-xl overflo..."
+-                                                 bis_skin_checked="1"
+                                                >
+                                                <div
+                                                  className="space-y-6"
+-                                                 bis_skin_checked="1"
+                                                >
+                                    <Footer>
+                                      <footer id="contacto" className="bg-gradien...">
+                                        <div
+                                          className="container mx-auto px-4 max-w-7xl"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12 text..."
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+-                                             bis_skin_checked="1"
+                                            >
+                                              <h3>
+                                              <div
+                                                className="space-y-3 mb-6"
+-                                               bis_skin_checked="1"
+                                              >
+                                              ...
+                                          <div
+                                            className="border-t border-white/20 py-6 text-center text-sm text-white/80"
+-                                           bis_skin_checked="1"
+                                          >
+                            <Fe position="bottom-right" toastOptions={{style:{...}}}>
+                              <div
+                                data-rht-toaster=""
+                                style={{position:"fixed",zIndex:9999,top:16,left:16,right:16,bottom:16,pointerEvents:"none"}}
+                                className={undefined}
+                                onMouseEnter={function}
+                                onMouseLeave={function}
+-                               bis_skin_checked="1"
+                              >
+                            ...
+                  ...
+
+[00:00:04.588] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:04.588] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:04.588] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765561330176}
+[00:00:05.076] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:00:05.076] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:00:06.803] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {title, description}). If you meant to render a collection of children, use an array instead.
+[00:00:46.219] Browser WARN    Image with src "/activated-charcoal-soap-round-flower-shape-cream-c.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:46.219] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_e25138fd-5bc6-4653-88e4-80e2a7011f97__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:00:46.219] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:46.219] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:46.220] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765561371811}
+[00:00:46.884] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:00:46.884] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:00:48.673] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {title, description}). If you meant to render a collection of children, use an array instead.
+[00:00:50.898] Browser WARN    Image with src "/activated-charcoal-soap-round-flower-shape-cream-c.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:50.898] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_0531029c-7658-4e6d-bf66-20fbef3234ec__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:00:50.898] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:50.898] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:50.898] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765561376490}
+[00:00:51.348] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:00:51.348] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:01:06.728] Server  LOG      ✓ Compiled in 70ms
+[00:07:01.341] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.343] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.344] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.345] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.347] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.348] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.349] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.351] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.356] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.358] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.360] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.361] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.362] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.364] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.365] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.367] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.371] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.373] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.374] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.375] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.376] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.377] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.378] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.380] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.381] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.382] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.383] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.385] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.386] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.388] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.389] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.390] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.392] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.393] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.394] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.395] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.396] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.397] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.397] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.398] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.399] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.400] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.400] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.401] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.402] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.403] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.405] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.405] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.407] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.408] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.408] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.409] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.410] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.411] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.411] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.412] Server  ERROR    ⨯ ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:01.413] Server  LOG      ✓ Compiled in 87ms
+[00:07:01.844] Browser ERROR   ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:07:01.844] Browser ERROR   ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:07.846] Browser ERROR   ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:07.846] Browser ERROR   ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:16.237] Server  ERROR    ⨯ ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:16.353] Browser ERROR   ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:16.353] Browser ERROR   ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:16.947] Browser ERROR   ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:16.947] Browser ERROR   ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:16.947] Browser ERROR   ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:16.947] Browser ERROR   ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:17.183] Browser ERROR   ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:17.183] Browser ERROR   ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:17.486] Browser ERROR   uncaughtError: Error: ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:17.860] Browser ERROR   ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:17.860] Browser ERROR   ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:17.860] Browser ERROR   ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:17.860] Browser ERROR   ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:40.189] Browser ERROR   ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:40.189] Browser ERROR   ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:40.917] Browser ERROR   ./store/cart-store.ts:1:1
+Module not found: Can't resolve 'zustand'
+> 1 | import { create } from "zustand";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { persist } from "zustand/middleware";
+  3 |
+  4 | interface CartItem {
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:40.917] Browser ERROR   ./store/cart-store.ts:2:1
+Module not found: Can't resolve 'zustand/middleware'
+  1 | import { create } from "zustand";
+> 2 | import { persist } from "zustand/middleware";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface CartItem {
+  5 |   id: number;
+
+Import traces:
+  Client Component Browser:
+    ./store/cart-store.ts [Client Component Browser]
+    ./components/product-card.tsx [Client Component Browser]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./store/cart-store.ts [Client Component SSR]
+    ./components/product-card.tsx [Client Component SSR]
+    ./components/product-card.tsx [Server Component]
+    ./components/product-grid.tsx [Server Component]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:40.947] Server  LOG      ✓ Compiled in 45ms
+[00:08:41.970] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -44,19 +2614,102 @@ It can also happen if the client has a browser extension installed which messes 
                         >
                           <body
                             className="font-sans antialiased"
--                           __processed_d1c29bf4-fddd-4631-948d-b571ac23ce92__="true"
+-                           __processed_edecbcc1-c73c-4957-a6ff-d65be85169ca__="true"
 -                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
                           >
                   ...
 
-[00:00:05.959] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:05.959] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:05.959] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765552286183}
-[00:00:06.095] Browser WARN    Image with src "/orange-calendula-soap-beehive-shape.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:08:41.970] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:08:41.970] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:08:41.970] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765561847563}
+[00:08:53.089] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:08:53.089] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:10:29.199] Server  LOG      ✓ Compiled in 132ms
+[00:12:25.911] Server  LOG      ✓ Compiled in 70ms
+[00:12:35.133] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_04622d46-5536-492b-9e5f-381a02228e2a__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:12:35.133] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:35.133] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:12:35.133] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765562080699}
+[00:12:52.767] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:12:52.767] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:14:46.015] Server  LOG      ✓ Compiled in 60ms
+[00:14:49.418] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:14:49.418] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:14:53.059] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:14:53.059] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:14:56.379] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:14:56.379] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:15:15.705] Server  LOG      ✓ Compiled in 46ms
+[00:15:26.227] Server  LOG      ✓ Compiled in 43ms
+[00:16:07.785] Server  LOG      ✓ Compiled in 39ms
+[00:16:11.972] Server  LOG      ✓ Compiled in 34ms
+[00:16:25.258] Server  LOG      ✓ Compiled in 40ms
+[00:16:30.629] Server  LOG      ✓ Compiled in 39ms
+[00:16:40.819] Server  LOG      ✓ Compiled in 111ms
+[00:16:47.057] Server  LOG      ✓ Compiled in 33ms
+[00:16:50.346] Server  LOG      ✓ Compiled in 87ms
+[00:16:53.570] Server  LOG      ✓ Compiled in 39ms
+[00:17:06.899] Server  LOG      ✓ Compiled in 40ms
+[00:17:10.275] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:17:10.275] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:17:27.397] Server  LOG      ✓ Compiled in 40ms
+[00:18:42.203] Server  LOG      ✓ Compiled in 175ms
+[00:19:09.798] Server  LOG      ✓ Compiled in 65ms
+[00:21:58.611] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:21:58.611] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:22:03.254] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:22:03.254] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:23:16.252] Server  LOG      ✓ Compiled in 67ms
+[00:23:20.787] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:23:20.788] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:23:26.629] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:23:26.630] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:23:36.409] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:23:36.409] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:23:41.917] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:23:41.917] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:23:49.870] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:23:49.870] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:24:48.204] Server  LOG      ✓ Compiled in 52ms
+[00:24:53.387] Browser WARN    Image with src "/activated-charcoal-soap-square-with-tree-pattern.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:00:11.291] Browser WARN    Image with src "/activated-charcoal-soap-square-with-tree-pattern.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:00:11.291] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:24:53.387] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -88,18 +2741,66 @@ It can also happen if the client has a browser extension installed which messes 
                         <html lang="es">
                           <body
                             className="font-sans antialiased"
--                           __processed_c8958b3f-ae2f-44fc-9fef-859719441e2b__="true"
+-                           __processed_141bc67d-6abe-4f47-ae0c-b2356537d909__="true"
 -                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
                           >
                   ...
 
-[00:00:11.401] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:11.402] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:11.402] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765552291642}
-[00:01:32.671] Server  LOG      ✓ Compiled in 156ms
-[00:02:00.000] Browser WARN    Image with src "/activated-charcoal-soap-round-flower-shape-cream-c.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:02:00.000] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:24:53.388] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:24:53.388] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:24:53.388] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765562818979}
+[00:24:59.117] Server  LOG      ✓ Compiled in 48ms
+[00:25:04.396] Server  LOG      ✓ Compiled in 44ms
+[00:25:08.881] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:25:08.882] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:25:14.194] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:25:14.194] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:25:27.632] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:25:27.632] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:27:52.358] Server  LOG      ✓ Compiled in 131ms
+[00:28:08.361] Server  LOG      ✓ Compiled in 104ms
+[00:28:15.941] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:28:15.941] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:28:51.502] Server  LOG      ✓ Compiled in 52ms
+[00:28:51.844] Browser ERROR   ./components/product-card.tsx:20:22
+Parsing ecmascript source code failed
+  18 |     ? product.price * (1 - product.discount / 100)
+  19 |     : product.price;
+> 20 |   const { toast } = (useToast() = product.discount
+     |                      ^^^^^^^^^^
+  21 |     ? product.price * (1 - product.discount / 100)
+  22 |     : product.price);
+  23 |
+
+The left-hand side of an assignment expression must be a variable or a property access.
+
+Import trace:
+  Server Component:
+    ./components/product-card.tsx
+    ./components/product-grid.tsx
+    ./app/page.tsx
+[00:29:05.059] Browser ERROR   ./components/product-card.tsx:20:22
+Parsing ecmascript source code failed
+  18 |     ? product.price * (1 - product.discount / 100)
+  19 |     : product.price;
+> 20 |   const { toast } = (useToast() = product.discount
+     |                      ^^^^^^^^^^
+  21 |     ? product.price * (1 - product.discount / 100)
+  22 |     : product.price);
+  23 |
+
+The left-hand side of an assignment expression must be a variable or a property access.
+
+Import trace:
+  Server Component:
+    ./components/product-card.tsx
+    ./components/product-grid.tsx
+    ./app/page.tsx
+[00:29:27.041] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:29:27.041] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:29:28.210] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:29:28.211] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:29:30.114] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -131,988 +2832,34 @@ It can also happen if the client has a browser extension installed which messes 
                         <html lang="es">
                           <body
                             className="font-sans antialiased"
--                           __processed_81de6b3c-e0e0-46a3-a6c9-b730fc4e74f5__="true"
+-                           __processed_b5b79298-68e9-4dce-95e3-80f6fbb01d95__="true"
 -                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
                           >
                   ...
 
-[00:02:00.000] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:02:00.000] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:02:00.000] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765552400240}
-[00:09:14.463] Server  LOG      ✓ Compiled in 119ms
-[00:09:20.347] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="es">
-                          <body
-                            className="font-sans antialiased"
--                           __processed_3c798f87-0a3d-4ae9-b4aa-f16095aab133__="true"
--                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
-                          >
-                  ...
-
-[00:09:20.347] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:09:20.347] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:09:20.347] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765552840586}
-[00:11:09.034] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="es">
-                          <body
-                            className="font-sans antialiased"
--                           __processed_a31dd2a2-ccfc-460e-b163-cebb975445bf__="true"
--                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
-                          >
-                  ...
-
-[00:11:09.034] Browser WARN    Image with src "/activated-charcoal-soap-round-flower-shape-cream-c.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:11:09.141] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:11:09.141] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:11:09.141] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765552949382}
-[00:12:00.658] Server  ERROR    ⨯ ./app/page.tsx:2:1
-Module not found: Can't resolve '@/components/header'
-  1 | import { ProductGrid } from "@/components/product-grid";
-> 2 | import { Header } from "@/components/header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 | import { Footer } from "@/components/footer";
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-
-Import map: aliased to relative './components/header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:00.659] Server  ERROR    ⨯ ./app/page.tsx:2:1
-Module not found: Can't resolve '@/components/header'
-  1 | import { ProductGrid } from "@/components/product-grid";
-> 2 | import { Header } from "@/components/header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 | import { Footer } from "@/components/footer";
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-
-Import map: aliased to relative './components/header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:00.660] Server  ERROR    ⨯ ./app/page.tsx:2:1
-Module not found: Can't resolve '@/components/header'
-  1 | import { ProductGrid } from "@/components/product-grid";
-> 2 | import { Header } from "@/components/header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 | import { Footer } from "@/components/footer";
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-
-Import map: aliased to relative './components/header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:00.660] Server  ERROR    ⨯ ./app/page.tsx:2:1
-Module not found: Can't resolve '@/components/header'
-  1 | import { ProductGrid } from "@/components/product-grid";
-> 2 | import { Header } from "@/components/header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 | import { Footer } from "@/components/footer";
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-
-Import map: aliased to relative './components/header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:00.661] Server  ERROR    ⨯ ./app/page.tsx:2:1
-Module not found: Can't resolve '@/components/header'
-  1 | import { ProductGrid } from "@/components/product-grid";
-> 2 | import { Header } from "@/components/header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 | import { Footer } from "@/components/footer";
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-
-Import map: aliased to relative './components/header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:00.661] Server  ERROR    ⨯ ./app/page.tsx:2:1
-Module not found: Can't resolve '@/components/header'
-  1 | import { ProductGrid } from "@/components/product-grid";
-> 2 | import { Header } from "@/components/header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 | import { Footer } from "@/components/footer";
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-
-Import map: aliased to relative './components/header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:00.662] Server  ERROR    ⨯ ./app/page.tsx:2:1
-Module not found: Can't resolve '@/components/header'
-  1 | import { ProductGrid } from "@/components/product-grid";
-> 2 | import { Header } from "@/components/header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 | import { Footer } from "@/components/footer";
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-
-Import map: aliased to relative './components/header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:00.662] Server  ERROR    ⨯ ./app/page.tsx:2:1
-Module not found: Can't resolve '@/components/header'
-  1 | import { ProductGrid } from "@/components/product-grid";
-> 2 | import { Header } from "@/components/header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 | import { Footer } from "@/components/footer";
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-
-Import map: aliased to relative './components/header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:00.663] Server  ERROR    ⨯ ./app/page.tsx:2:1
-Module not found: Can't resolve '@/components/header'
-  1 | import { ProductGrid } from "@/components/product-grid";
-> 2 | import { Header } from "@/components/header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 | import { Footer } from "@/components/footer";
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-
-Import map: aliased to relative './components/header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:00.663] Server  ERROR    ⨯ ./app/page.tsx:2:1
-Module not found: Can't resolve '@/components/header'
-  1 | import { ProductGrid } from "@/components/product-grid";
-> 2 | import { Header } from "@/components/header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 | import { Footer } from "@/components/footer";
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-
-Import map: aliased to relative './components/header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:00.664] Server  ERROR    ⨯ ./app/page.tsx:2:1
-Module not found: Can't resolve '@/components/header'
-  1 | import { ProductGrid } from "@/components/product-grid";
-> 2 | import { Header } from "@/components/header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 | import { Footer } from "@/components/footer";
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-
-Import map: aliased to relative './components/header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:00.665] Server  ERROR    ⨯ ./app/page.tsx:2:1
-Module not found: Can't resolve '@/components/header'
-  1 | import { ProductGrid } from "@/components/product-grid";
-> 2 | import { Header } from "@/components/header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 | import { Footer } from "@/components/footer";
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-
-Import map: aliased to relative './components/header' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:00.797] Browser ERROR   ./app/page.tsx:2:1
-Module not found: Can't resolve '@/components/header'
-  1 | import { ProductGrid } from "@/components/product-grid";
-> 2 | import { Header } from "@/components/header";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  3 | import { Footer } from "@/components/footer";
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-
-Import map: aliased to relative './components/header' inside of [project]/
-
-https://nextjs.org/docs/messages/module-not-found
-[00:12:24.183] Server  LOG      ✓ Compiled in 30ms
-[00:12:25.195] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
-
-Check the render method of `Home`.
-[00:12:42.395] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/navbar'
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-> 6 | import Navbar from "@/components/navbar";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/navbar' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:42.396] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/navbar'
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-> 6 | import Navbar from "@/components/navbar";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/navbar' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:42.397] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/navbar'
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-> 6 | import Navbar from "@/components/navbar";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/navbar' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:42.398] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/navbar'
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-> 6 | import Navbar from "@/components/navbar";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/navbar' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:42.399] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/navbar'
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-> 6 | import Navbar from "@/components/navbar";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/navbar' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:42.399] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/navbar'
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-> 6 | import Navbar from "@/components/navbar";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/navbar' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:42.400] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/navbar'
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-> 6 | import Navbar from "@/components/navbar";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/navbar' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:42.401] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/navbar'
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-> 6 | import Navbar from "@/components/navbar";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/navbar' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:42.402] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/navbar'
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-> 6 | import Navbar from "@/components/navbar";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/navbar' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:42.403] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/navbar'
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-> 6 | import Navbar from "@/components/navbar";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/navbar' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:42.404] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/navbar'
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-> 6 | import Navbar from "@/components/navbar";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/navbar' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:42.404] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/navbar'
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-> 6 | import Navbar from "@/components/navbar";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/navbar' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:42.405] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/navbar'
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-> 6 | import Navbar from "@/components/navbar";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/navbar' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:42.407] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/navbar'
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-> 6 | import Navbar from "@/components/navbar";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/navbar' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:12:42.427] Server  LOG      ✓ Compiled in 64ms
-[00:12:42.530] Browser ERROR   ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/navbar'
-  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
-  5 | import Container from "@/components/Container";
-> 6 | import Navbar from "@/components/navbar";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/navbar' inside of [project]/
-
-https://nextjs.org/docs/messages/module-not-found
-[00:13:04.533] Browser WARN    Image with src "/orange-calendula-soap-beehive-shape.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:13:04.533] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="es">
-                          <body
-                            className="font-sans antialiased"
--                           __processed_a6d2d04d-308d-443a-b5bb-c28355cda8b6__="true"
--                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
-                          >
-                  ...
-
-[00:13:04.534] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:13:04.534] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:13:04.534] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765553064774}
-[00:16:00.234] Server  LOG      ✓ Compiled in 165ms
-[00:16:01.196] Browser ERROR   ./app/page.tsx:6:1
-Export Navbar2 doesn't exist in target module
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import { Navbar2 } from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
-Did you mean to import default?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-[00:16:12.112] Browser ERROR   ./app/page.tsx:6:1
-Export Navbar2 doesn't exist in target module
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import { Navbar2 } from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
-Did you mean to import default?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-[00:16:16.923] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Export Navbar2 doesn't exist in target module
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import { Navbar2 } from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
-Did you mean to import default?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-
-[00:16:17.050] Browser ERROR   ./app/page.tsx:6:1
-Export Navbar2 doesn't exist in target module
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import { Navbar2 } from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
-Did you mean to import default?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-[00:16:17.602] Browser ERROR   ./app/page.tsx:6:1
-Export Navbar2 doesn't exist in target module
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import { Navbar2 } from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
-Did you mean to import default?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-[00:16:17.602] Browser ERROR   ./app/page.tsx:6:1
-Export Navbar2 doesn't exist in target module
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import { Navbar2 } from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
-Did you mean to import default?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-[00:16:17.833] Browser ERROR   ./app/page.tsx:6:1
-Export Navbar2 doesn't exist in target module
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import { Navbar2 } from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
-Did you mean to import default?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-[00:16:18.031] Browser ERROR   uncaughtError: Error: ./app/page.tsx:6:1
-Export Navbar2 doesn't exist in target module
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import { Navbar2 } from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
-Did you mean to import default?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-
-[00:16:18.220] Browser ERROR   ./app/page.tsx:6:1
-Export Navbar2 doesn't exist in target module
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import { Navbar2 } from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
-Did you mean to import default?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-[00:16:18.323] Browser ERROR   ./app/page.tsx:6:1
-Export Navbar2 doesn't exist in target module
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import { Navbar2 } from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
-Did you mean to import default?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-[00:16:32.918] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="es">
-                          <body
-                            className="font-sans antialiased"
--                           __processed_41d5b924-84d1-453b-929d-154ac2a111f2__="true"
--                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
-                          >
-                  ...
-
-[00:16:32.918] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:16:32.918] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:16:32.918] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765553273159}
-[00:17:06.480] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/Navbar2'
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import Navbar2 from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/Navbar2' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:17:06.481] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/Navbar2'
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import Navbar2 from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/Navbar2' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:17:06.484] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/Navbar2'
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import Navbar2 from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/Navbar2' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:17:06.484] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/Navbar2'
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import Navbar2 from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/Navbar2' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:17:06.485] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/Navbar2'
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import Navbar2 from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/Navbar2' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:17:06.485] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/Navbar2'
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import Navbar2 from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/Navbar2' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:17:06.486] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/Navbar2'
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import Navbar2 from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/Navbar2' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:17:06.486] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/Navbar2'
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import Navbar2 from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/Navbar2' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:17:06.487] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/Navbar2'
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import Navbar2 from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/Navbar2' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:17:06.487] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/Navbar2'
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import Navbar2 from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/Navbar2' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:17:06.488] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/Navbar2'
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import Navbar2 from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/Navbar2' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:17:06.488] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/Navbar2'
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import Navbar2 from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/Navbar2' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:17:06.490] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/Navbar2'
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import Navbar2 from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/Navbar2' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:17:06.491] Server  ERROR    ⨯ ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/Navbar2'
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import Navbar2 from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/Navbar2' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:17:06.515] Server  LOG      ✓ Compiled in 92ms
-[00:17:06.616] Browser ERROR   ./app/page.tsx:6:1
-Module not found: Can't resolve '@/components/Navbar2'
-  4 | import Container from "@/components/Container";
-  5 | import { Navbar } from "@/components/Navbar";
-> 6 | import Navbar2 from "@/components/Navbar2";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 |
-  8 | export default function Home() {
-  9 |   return (
-
-Import map: aliased to relative './components/Navbar2' inside of [project]/
-
-https://nextjs.org/docs/messages/module-not-found
-[00:26:23.166] Server  LOG      ✓ Compiled in 156ms
-[00:26:24.206] Browser ERROR   ./components/product-card.tsx:1:10
+[00:29:30.114] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:29:30.114] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:29:30.114] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765563095707}
+[00:29:36.407] Server  LOG      ✓ Compiled in 43ms
+[00:29:36.844] Browser ERROR   ./components/product-card.tsx:20:22
+Parsing ecmascript source code failed
+  18 |     ? product.price * (1 - product.discount / 100)
+  19 |     : product.price;
+> 20 |   const { toast } = (useToast() = product.discount
+     |                      ^^^^^^^^^^
+  21 |     ? product.price * (1 - product.discount / 100)
+  22 |     : product.price);
+  23 |
+
+The left-hand side of an assignment expression must be a variable or a property access.
+
+Import trace:
+  Server Component:
+    ./components/product-card.tsx
+    ./components/product-grid.tsx
+    ./app/page.tsx
+[00:30:22.777] Server  LOG      ✓ Compiled in 177ms
+[00:30:23.843] Browser ERROR   ./components/product-card.tsx:1:10
 Ecmascript file had an error
 > 1 | import { useState } from "react";
     |          ^^^^^^^^
@@ -1129,21 +2876,39 @@ Import trace:
     ./components/product-card.tsx
     ./components/product-grid.tsx
     ./app/page.tsx
-[00:26:50.942] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:26:50.942] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:26:55.438] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:26:55.438] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:26:58.886] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:26:58.886] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:27:01.988] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:27:01.988] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:00:09.965] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:00:09.965] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:00:44.729] Server  LOG      ✓ Compiled in 48ms
-[01:01:43.510] Server  LOG      ✓ Compiled in 54ms
-[01:01:51.248] Browser WARN    Image with src "/activated-charcoal-soap-square-with-tree-pattern.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:30:39.843] Browser ERROR   ./components/product-card.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from "react";
+    |          ^^^^^^^^
+  2 | import { Card, CardContent } from "@/components/ui/card";
+  3 | import { Badge } from "@/components/ui/badge";
+  4 | import { Button } from "@/components/ui/button";
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./components/product-card.tsx
+    ./components/product-grid.tsx
+    ./app/page.tsx
+[00:30:55.622] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:30:55.622] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:32:15.521] Server  LOG      ✓ Compiled in 61ms
+[00:32:21.388] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:32:21.388] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:32:30.185] Server  LOG      ✓ Compiled in 35ms
+[00:32:49.683] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:32:49.683] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:33:24.929] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:33:24.929] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:34:18.489] Server  LOG      ✓ Compiled in 51ms
+[00:34:24.152] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:34:24.153] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:34:28.351] Browser WARN    Image with src "/activated-charcoal-soap-square-with-tree-pattern.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:01:51.248] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:34:28.524] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -1175,20 +2940,26 @@ It can also happen if the client has a browser extension installed which messes 
                         <html lang="es">
                           <body
                             className="font-sans antialiased"
--                           __processed_4ff64086-be91-4da6-a85c-adf5deabaaa2__="true"
+-                           __processed_b3d1bc5e-a22a-48b9-b59e-c46bb98988d0__="true"
 -                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
                           >
                   ...
 
-[01:01:51.248] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:01:51.248] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[01:01:51.248] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765555991488}
-[01:02:29.126] Server  LOG      ✓ Compiled in 52ms
-[01:02:34.771] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:02:34.771] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:02:57.439] Browser WARN    Image with src "/activated-charcoal-soap-square-with-tree-pattern.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:34:28.524] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:34:28.524] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:34:28.524] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765563394117}
+[00:34:28.855] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:34:28.855] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:34:31.710] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:34:31.710] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:34:33.764] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:34:33.764] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:34:36.386] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:34:36.386] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:35:08.750] Server  LOG      ✓ Compiled in 42ms
+[00:35:14.229] Browser WARN    Image with src "/activated-charcoal-soap-round-flower-shape-cream-c.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:02:57.603] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:35:14.391] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -1220,29 +2991,164 @@ It can also happen if the client has a browser extension installed which messes 
                         <html lang="es">
                           <body
                             className="font-sans antialiased"
--                           __processed_47bbb176-9a9f-4155-adb9-de3f871eff5b__="true"
+-                           __processed_06c63cfe-fd8e-48d4-8517-f00e0a16b59e__="true"
 -                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
                           >
                   ...
 
-[01:02:57.603] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:02:57.603] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[01:02:57.603] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765556057844}
-[01:02:58.520] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:02:58.520] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:03:22.363] Server  LOG      ✓ Compiled in 50ms
-[01:03:22.496] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:03:22.496] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:04:06.367] Server  LOG      ✓ Compiled in 62ms
-[01:04:06.501] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:04:06.501] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:04:10.855] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:04:10.855] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:04:14.383] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:04:14.383] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:04:16.237] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:04:16.237] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:04:27.566] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:04:27.566] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:04:31.541] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:04:31.541] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:35:14.391] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:35:14.391] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:35:14.391] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765563439983}
+[00:35:30.434] Server  LOG      ✓ Compiled in 37ms
+[00:35:46.136] Server  LOG      ✓ Compiled in 38ms
+[00:35:56.947] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:35:56.947] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:35:58.987] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:35:58.987] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:36:01.851] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:36:01.851] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:36:04.698] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_c341de52-87a4-446c-adcf-3ead11b4a856__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:36:04.698] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:36:04.698] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:36:04.698] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765563490291}
+[00:36:05.902] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:36:05.902] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:38:23.165] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:38:23.165] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:38:26.844] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:38:26.844] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:38:36.914] Browser WARN    Image with src "/activated-charcoal-soap-round-flower-shape-cream-c.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:38:36.914] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_eff6a1aa-8192-405b-ac8c-01efe13ea3f2__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:38:36.914] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:38:36.914] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:38:36.914] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765563642507}
+[00:38:38.499] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:38:38.499] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:39:51.546] Server  LOG      ✓ Compiled in 68ms
+[00:39:55.505] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:39:55.505] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:39:58.340] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:39:58.340] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:39:59.971] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:39:59.971] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:40:03.906] Browser WARN    Image with src "/activated-charcoal-soap-round-flower-shape-cream-c.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:40:03.906] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_ee288dd9-7421-42ed-a18b-2f6c13609ab4__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:40:03.906] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:40:03.906] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:40:03.906] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765563729498}
+[00:40:05.743] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:40:05.743] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:40:12.569] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:40:12.569] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:40:15.605] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:40:15.606] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.

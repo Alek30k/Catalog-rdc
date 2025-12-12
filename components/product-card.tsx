@@ -3,38 +3,30 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Button } from "./ui/button";
+import Image from "next/image";
 
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-  image: string;
-  discount: number | null;
-  features: string[];
-}
+import toast from "react-hot-toast";
+import { useCartStore } from "@/store/cart-store";
 
-interface ProductCardProps {
-  product: Product;
-}
-
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product }) {
   const [open, setOpen] = useState(false);
   const finalPrice = product.discount
     ? product.price * (1 - product.discount / 100)
     : product.price;
 
+  const addItem = useCartStore((state) => state.addItem);
+
   return (
     <>
       <Card
-        className="overflow-hidden hover:shadow-lg transition-shadow duration-300"
+        className="overflow-hidden hover:shadow-xl hover:-translate-y-1 transition duration-300 cursor-pointer"
         onClick={() => setOpen(true)}
       >
         <CardContent className="p-6">
@@ -44,19 +36,20 @@ export function ProductCard({ product }: ProductCardProps) {
                 {product.discount}% Descuento
               </Badge>
             )}
+
             <div className="relative aspect-square w-full overflow-hidden rounded-lg bg-muted">
               <Image
-                src={product.image || "/placeholder.svg"}
+                src={product.image}
                 alt={product.name}
                 fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
+                className="object-cover hover:scale-110 transition-transform duration-500"
               />
             </div>
           </div>
 
           <div className="space-y-4">
             <div className="flex items-baseline gap-2">
-              <span className="text-3xl md:text-4xl font-bold text-primary">
+              <span className="text-3xl font-bold text-primary">
                 €{finalPrice}
               </span>
               {product.discount && (
@@ -69,28 +62,10 @@ export function ProductCard({ product }: ProductCardProps) {
             <h3 className="text-lg font-semibold text-foreground">
               {product.name}
             </h3>
-
-            <ul className="space-y-2">
-              {product.features.map((feature, index) => (
-                <li
-                  key={index}
-                  className="text-sm text-muted-foreground flex items-start gap-2"
-                >
-                  <span className="text-primary mt-1">•</span>
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-
-            <div className="pt-4 border-t border-border">
-              <p className="text-xs text-muted-foreground leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                semper felis vel metus tincidunt, ut dignissim ex efficitur.
-              </p>
-            </div>
           </div>
         </CardContent>
       </Card>
+
       {/* MODAL */}
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-w-lg md:max-w-2xl p-0 overflow-hidden rounded-2xl">
@@ -132,7 +107,19 @@ export function ProductCard({ product }: ProductCardProps) {
                 ))}
               </ul>
 
-              <Button className="w-full bg-gradient-to-r from-primary to-secondary text-white rounded-xl">
+              <Button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  addItem({
+                    id: product.id,
+                    name: product.name,
+                    price: finalPrice,
+                    image: product.image,
+                    quantity: 1,
+                  });
+                  toast.success(`${product.name} agregado al carrito`);
+                }}
+              >
                 Añadir al carrito
               </Button>
             </div>

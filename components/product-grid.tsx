@@ -1,4 +1,4 @@
-import { ProductCard } from "@/components/product-card"
+import { ProductCard } from "@/components/product-card";
 
 const products = [
   {
@@ -7,7 +7,12 @@ const products = [
     price: 186,
     image: "/activated-charcoal-soap-square-with-tree-pattern.jpg",
     discount: null,
-    features: ["6 cuotas sin interés", "12 Meses de garantía", "Recibe tu pedido en 24 h.", "Devoluciones gratuitas"],
+    features: [
+      "6 cuotas sin interés",
+      "12 Meses de garantía",
+      "Recibe tu pedido en 24 h.",
+      "Devoluciones gratuitas",
+    ],
   },
   {
     id: 2,
@@ -15,7 +20,12 @@ const products = [
     price: 356,
     image: "/activated-charcoal-soap-round-flower-shape-cream-c.jpg",
     discount: null,
-    features: ["6 cuotas sin interés", "12 Meses de garantía", "Recibe tu pedido en 24 h.", "Devoluciones gratuitas"],
+    features: [
+      "6 cuotas sin interés",
+      "12 Meses de garantía",
+      "Recibe tu pedido en 24 h.",
+      "Devoluciones gratuitas",
+    ],
   },
   {
     id: 3,
@@ -31,14 +41,18 @@ const products = [
     price: 2000,
     image: "/yellow-lemon-soap-three-pieces-stacked.jpg",
     discount: null,
-    features: ["Pack 3 Unidades: $6800", "Limpieza y control de grasas", "Purifica y limpia los poros"],
+    features: [
+      "Pack 3 Unidades: $6800",
+      "Limpieza y control de grasas",
+      "Purifica y limpia los poros",
+    ],
   },
   {
     id: 5,
     name: "Jabón de Avena",
-    price: 2199,
+    price: 2000,
     image: "/oatmeal-soap-beige-pink-gradient-flower-shape.jpg",
-    discount: 10,
+    discount: 5,
     features: [
       "Para pieles muy sensibles e irritadas",
       "Calmante y Alivio del enrojecimiento",
@@ -51,15 +65,23 @@ const products = [
     price: 2200,
     image: "/purple-lavender-soap-round-flower-shape.jpg",
     discount: null,
-    features: ["Para un baño calmante y antiestrés", "Aroma relajante", "Calma la piel irritada y sensible"],
+    features: [
+      "Para un baño calmante y antiestrés",
+      "Aroma relajante",
+      "Calma la piel irritada y sensible",
+    ],
   },
   {
     id: 7,
     name: "Jabón de Café",
-    price: 2999,
+    price: 2500,
     image: "/coffee-soap-brown-massage-nodules.jpg",
-    discount: 25,
-    features: ["Para exfoliar, estimular y tonificar", "Estimula la circulación y renueva la piel", "Antioxidante"],
+    discount: 5,
+    features: [
+      "Para exfoliar, estimular y tonificar",
+      "Estimula la circulación y renueva la piel",
+      "Antioxidante",
+    ],
   },
   {
     id: 8,
@@ -103,7 +125,11 @@ const products = [
     price: 2400,
     image: "/orange-citrus-soap-dome-half-sphere-shape.jpg",
     discount: 15,
-    features: ["Para iluminar y revitalizar la piel opaca", "Estimula la circulación", "Aroma cítrico"],
+    features: [
+      "Para iluminar y revitalizar la piel opaca",
+      "Estimula la circulación",
+      "Aroma cítrico",
+    ],
   },
   {
     id: 12,
@@ -111,7 +137,12 @@ const products = [
     price: 99,
     image: "/colorful-bear-shaped-soaps-grid-twelve-colors.jpg",
     discount: 25,
-    features: ["6 cuotas sin interés", "Recibe tu pedido en 24 h.", "Devoluciones gratuitas", "Envío sin cargo"],
+    features: [
+      "6 cuotas sin interés",
+      "Recibe tu pedido en 24 h.",
+      "Devoluciones gratuitas",
+      "Envío sin cargo",
+    ],
   },
   {
     id: 13,
@@ -119,9 +150,14 @@ const products = [
     price: 460,
     image: "/red-white-candy-swirl-pattern-round-soap.jpg",
     discount: 15,
-    features: ["6 cuotas sin interés", "Recibe tu pedido en 24 h.", "Devoluciones gratuitas", "Envío sin cargo"],
+    features: [
+      "6 cuotas sin interés",
+      "Recibe tu pedido en 24 h.",
+      "Devoluciones gratuitas",
+      "Envío sin cargo",
+    ],
   },
-]
+];
 
 export function ProductGrid() {
   return (
@@ -134,5 +170,5 @@ export function ProductGrid() {
         </div>
       </div>
     </section>
-  )
+  );
 }

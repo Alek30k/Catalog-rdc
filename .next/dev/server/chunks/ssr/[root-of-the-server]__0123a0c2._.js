@@ -110,9 +110,9 @@ const products = [
     {
         id: 5,
         name: "Jabón de Avena",
-        price: 2199,
+        price: 2000,
         image: "/oatmeal-soap-beige-pink-gradient-flower-shape.jpg",
-        discount: 10,
+        discount: 5,
         features: [
             "Para pieles muy sensibles e irritadas",
             "Calmante y Alivio del enrojecimiento",
@@ -134,9 +134,9 @@ const products = [
     {
         id: 7,
         name: "Jabón de Café",
-        price: 2999,
+        price: 2500,
         image: "/coffee-soap-brown-massage-nodules.jpg",
-        discount: 25,
+        discount: 5,
         features: [
             "Para exfoliar, estimular y tonificar",
             "Estimula la circulación y renueva la piel",
@@ -229,22 +229,22 @@ function ProductGrid() {
                         product: product
                     }, product.id, false, {
                         fileName: "[project]/components/product-grid.tsx",
-                        lineNumber: 132,
+                        lineNumber: 168,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/product-grid.tsx",
-                lineNumber: 130,
+                lineNumber: 166,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/product-grid.tsx",
-            lineNumber: 129,
+            lineNumber: 165,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/product-grid.tsx",
-        lineNumber: 128,
+        lineNumber: 164,
         columnNumber: 5
     }, this);
 }
