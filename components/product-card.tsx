@@ -90,7 +90,7 @@ export function ProductCard({ product }) {
 
               <div className="flex items-baseline gap-2">
                 <span className="text-3xl font-bold text-primary">
-                  €{finalPrice}
+                  ${finalPrice}
                 </span>
                 {product.discount && (
                   <span className="text-sm text-muted-foreground line-through">
