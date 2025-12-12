@@ -1,0 +1,1248 @@
+[00:00:00.733] Server  LOG     
+[00:00:00.733] Server  LOG        We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:00.734] Server  LOG        The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+[00:00:00.734] Server  LOG        	- include was updated to add '.next/dev/types/**/*.ts'
+[00:00:00.734] Server  LOG     
+[00:00:00.734] Server  LOG        The following mandatory changes were made to your tsconfig.json:
+
+[00:00:00.734] Server  LOG        	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+[00:00:00.734] Server  LOG     
+[00:00:00.842] Server  LOG      ✓ Ready in 544ms
+[00:00:05.959] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="es"
+-                         bbai-tooltip-injected="true"
+                        >
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_d1c29bf4-fddd-4631-948d-b571ac23ce92__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:00:05.959] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:05.959] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:05.959] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765552286183}
+[00:00:06.095] Browser WARN    Image with src "/orange-calendula-soap-beehive-shape.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:11.291] Browser WARN    Image with src "/activated-charcoal-soap-square-with-tree-pattern.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:11.291] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_c8958b3f-ae2f-44fc-9fef-859719441e2b__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:00:11.401] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:11.402] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:11.402] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765552291642}
+[00:01:32.671] Server  LOG      ✓ Compiled in 156ms
+[00:02:00.000] Browser WARN    Image with src "/activated-charcoal-soap-round-flower-shape-cream-c.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:02:00.000] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_81de6b3c-e0e0-46a3-a6c9-b730fc4e74f5__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:02:00.000] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:02:00.000] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:02:00.000] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765552400240}
+[00:09:14.463] Server  LOG      ✓ Compiled in 119ms
+[00:09:20.347] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_3c798f87-0a3d-4ae9-b4aa-f16095aab133__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:09:20.347] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:09:20.347] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:09:20.347] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765552840586}
+[00:11:09.034] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_a31dd2a2-ccfc-460e-b163-cebb975445bf__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:11:09.034] Browser WARN    Image with src "/activated-charcoal-soap-round-flower-shape-cream-c.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:11:09.141] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:11:09.141] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:11:09.141] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765552949382}
+[00:12:00.658] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/header'
+  1 | import { ProductGrid } from "@/components/product-grid";
+> 2 | import { Header } from "@/components/header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Footer } from "@/components/footer";
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+
+Import map: aliased to relative './components/header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:00.659] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/header'
+  1 | import { ProductGrid } from "@/components/product-grid";
+> 2 | import { Header } from "@/components/header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Footer } from "@/components/footer";
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+
+Import map: aliased to relative './components/header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:00.660] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/header'
+  1 | import { ProductGrid } from "@/components/product-grid";
+> 2 | import { Header } from "@/components/header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Footer } from "@/components/footer";
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+
+Import map: aliased to relative './components/header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:00.660] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/header'
+  1 | import { ProductGrid } from "@/components/product-grid";
+> 2 | import { Header } from "@/components/header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Footer } from "@/components/footer";
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+
+Import map: aliased to relative './components/header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:00.661] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/header'
+  1 | import { ProductGrid } from "@/components/product-grid";
+> 2 | import { Header } from "@/components/header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Footer } from "@/components/footer";
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+
+Import map: aliased to relative './components/header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:00.661] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/header'
+  1 | import { ProductGrid } from "@/components/product-grid";
+> 2 | import { Header } from "@/components/header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Footer } from "@/components/footer";
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+
+Import map: aliased to relative './components/header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:00.662] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/header'
+  1 | import { ProductGrid } from "@/components/product-grid";
+> 2 | import { Header } from "@/components/header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Footer } from "@/components/footer";
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+
+Import map: aliased to relative './components/header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:00.662] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/header'
+  1 | import { ProductGrid } from "@/components/product-grid";
+> 2 | import { Header } from "@/components/header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Footer } from "@/components/footer";
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+
+Import map: aliased to relative './components/header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:00.663] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/header'
+  1 | import { ProductGrid } from "@/components/product-grid";
+> 2 | import { Header } from "@/components/header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Footer } from "@/components/footer";
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+
+Import map: aliased to relative './components/header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:00.663] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/header'
+  1 | import { ProductGrid } from "@/components/product-grid";
+> 2 | import { Header } from "@/components/header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Footer } from "@/components/footer";
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+
+Import map: aliased to relative './components/header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:00.664] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/header'
+  1 | import { ProductGrid } from "@/components/product-grid";
+> 2 | import { Header } from "@/components/header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Footer } from "@/components/footer";
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+
+Import map: aliased to relative './components/header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:00.665] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/header'
+  1 | import { ProductGrid } from "@/components/product-grid";
+> 2 | import { Header } from "@/components/header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Footer } from "@/components/footer";
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+
+Import map: aliased to relative './components/header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:00.797] Browser ERROR   ./app/page.tsx:2:1
+Module not found: Can't resolve '@/components/header'
+  1 | import { ProductGrid } from "@/components/product-grid";
+> 2 | import { Header } from "@/components/header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Footer } from "@/components/footer";
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+
+Import map: aliased to relative './components/header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:12:24.183] Server  LOG      ✓ Compiled in 30ms
+[00:12:25.195] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `Home`.
+[00:12:42.395] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/navbar'
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+> 6 | import Navbar from "@/components/navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:42.396] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/navbar'
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+> 6 | import Navbar from "@/components/navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:42.397] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/navbar'
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+> 6 | import Navbar from "@/components/navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:42.398] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/navbar'
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+> 6 | import Navbar from "@/components/navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:42.399] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/navbar'
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+> 6 | import Navbar from "@/components/navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:42.399] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/navbar'
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+> 6 | import Navbar from "@/components/navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:42.400] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/navbar'
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+> 6 | import Navbar from "@/components/navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:42.401] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/navbar'
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+> 6 | import Navbar from "@/components/navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:42.402] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/navbar'
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+> 6 | import Navbar from "@/components/navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:42.403] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/navbar'
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+> 6 | import Navbar from "@/components/navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:42.404] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/navbar'
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+> 6 | import Navbar from "@/components/navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:42.404] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/navbar'
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+> 6 | import Navbar from "@/components/navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:42.405] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/navbar'
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+> 6 | import Navbar from "@/components/navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:42.407] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/navbar'
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+> 6 | import Navbar from "@/components/navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:42.427] Server  LOG      ✓ Compiled in 64ms
+[00:12:42.530] Browser ERROR   ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/navbar'
+  4 | import { CustomSoapSection } from "@/components/custom-soap-section";
+  5 | import Container from "@/components/Container";
+> 6 | import Navbar from "@/components/navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/navbar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:13:04.533] Browser WARN    Image with src "/orange-calendula-soap-beehive-shape.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:13:04.533] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_a6d2d04d-308d-443a-b5bb-c28355cda8b6__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:13:04.534] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:13:04.534] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:13:04.534] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765553064774}
+[00:16:00.234] Server  LOG      ✓ Compiled in 165ms
+[00:16:01.196] Browser ERROR   ./app/page.tsx:6:1
+Export Navbar2 doesn't exist in target module
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import { Navbar2 } from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:16:12.112] Browser ERROR   ./app/page.tsx:6:1
+Export Navbar2 doesn't exist in target module
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import { Navbar2 } from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:16:16.923] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Export Navbar2 doesn't exist in target module
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import { Navbar2 } from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+[00:16:17.050] Browser ERROR   ./app/page.tsx:6:1
+Export Navbar2 doesn't exist in target module
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import { Navbar2 } from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:16:17.602] Browser ERROR   ./app/page.tsx:6:1
+Export Navbar2 doesn't exist in target module
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import { Navbar2 } from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:16:17.602] Browser ERROR   ./app/page.tsx:6:1
+Export Navbar2 doesn't exist in target module
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import { Navbar2 } from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:16:17.833] Browser ERROR   ./app/page.tsx:6:1
+Export Navbar2 doesn't exist in target module
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import { Navbar2 } from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:16:18.031] Browser ERROR   uncaughtError: Error: ./app/page.tsx:6:1
+Export Navbar2 doesn't exist in target module
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import { Navbar2 } from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+[00:16:18.220] Browser ERROR   ./app/page.tsx:6:1
+Export Navbar2 doesn't exist in target module
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import { Navbar2 } from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:16:18.323] Browser ERROR   ./app/page.tsx:6:1
+Export Navbar2 doesn't exist in target module
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import { Navbar2 } from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+The export Navbar2 was not found in module [project]/components/Navbar2.tsx [app-rsc] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:16:32.918] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_41d5b924-84d1-453b-929d-154ac2a111f2__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:16:32.918] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:16:32.918] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:16:32.918] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765553273159}
+[00:17:06.480] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/Navbar2'
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import Navbar2 from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/Navbar2' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:06.481] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/Navbar2'
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import Navbar2 from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/Navbar2' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:06.484] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/Navbar2'
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import Navbar2 from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/Navbar2' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:06.484] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/Navbar2'
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import Navbar2 from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/Navbar2' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:06.485] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/Navbar2'
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import Navbar2 from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/Navbar2' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:06.485] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/Navbar2'
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import Navbar2 from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/Navbar2' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:06.486] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/Navbar2'
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import Navbar2 from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/Navbar2' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:06.486] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/Navbar2'
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import Navbar2 from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/Navbar2' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:06.487] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/Navbar2'
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import Navbar2 from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/Navbar2' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:06.487] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/Navbar2'
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import Navbar2 from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/Navbar2' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:06.488] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/Navbar2'
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import Navbar2 from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/Navbar2' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:06.488] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/Navbar2'
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import Navbar2 from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/Navbar2' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:06.490] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/Navbar2'
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import Navbar2 from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/Navbar2' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:06.491] Server  ERROR    ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/Navbar2'
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import Navbar2 from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/Navbar2' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:06.515] Server  LOG      ✓ Compiled in 92ms
+[00:17:06.616] Browser ERROR   ./app/page.tsx:6:1
+Module not found: Can't resolve '@/components/Navbar2'
+  4 | import Container from "@/components/Container";
+  5 | import { Navbar } from "@/components/Navbar";
+> 6 | import Navbar2 from "@/components/Navbar2";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Home() {
+  9 |   return (
+
+Import map: aliased to relative './components/Navbar2' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:26:23.166] Server  LOG      ✓ Compiled in 156ms
+[00:26:24.206] Browser ERROR   ./components/product-card.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from "react";
+    |          ^^^^^^^^
+  2 | import { Card, CardContent } from "@/components/ui/card";
+  3 | import { Badge } from "@/components/ui/badge";
+  4 | import { Button } from "@/components/ui/button";
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./components/product-card.tsx
+    ./components/product-grid.tsx
+    ./app/page.tsx
+[00:26:50.942] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:26:50.942] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:26:55.438] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:26:55.438] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:26:58.886] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:26:58.886] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:27:01.988] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:27:01.988] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:00:09.965] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:00:09.965] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:00:44.729] Server  LOG      ✓ Compiled in 48ms
+[01:01:43.510] Server  LOG      ✓ Compiled in 54ms
+[01:01:51.248] Browser WARN    Image with src "/activated-charcoal-soap-square-with-tree-pattern.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:01:51.248] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_4ff64086-be91-4da6-a85c-adf5deabaaa2__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[01:01:51.248] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:01:51.248] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:01:51.248] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765555991488}
+[01:02:29.126] Server  LOG      ✓ Compiled in 52ms
+[01:02:34.771] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:02:34.771] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:02:57.439] Browser WARN    Image with src "/activated-charcoal-soap-square-with-tree-pattern.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:02:57.603] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_47bbb176-9a9f-4155-adb9-de3f871eff5b__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[01:02:57.603] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:02:57.603] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:02:57.603] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765556057844}
+[01:02:58.520] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:02:58.520] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:03:22.363] Server  LOG      ✓ Compiled in 50ms
+[01:03:22.496] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:03:22.496] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:04:06.367] Server  LOG      ✓ Compiled in 62ms
+[01:04:06.501] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:04:06.501] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:04:10.855] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:04:10.855] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:04:14.383] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:04:14.383] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:04:16.237] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:04:16.237] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:04:27.566] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:04:27.566] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:04:31.541] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:04:31.541] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
