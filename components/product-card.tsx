@@ -54,7 +54,7 @@ export function ProductCard({ product }) {
               </span>
               {product.discount && (
                 <span className="text-sm text-muted-foreground line-through">
-                  €{product.price}
+                  ${product.price}
                 </span>
               )}
             </div>
