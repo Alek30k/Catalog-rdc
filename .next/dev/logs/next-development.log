@@ -39,3 +39,1654 @@ It can also happen if the client has a browser extension installed which messes 
 [00:00:07.989] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
 [00:00:07.990] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
 [00:00:07.990] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765564923535}
+[00:26:15.785] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:26:15.785] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:26:22.362] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_e4316c30-c6ff-4241-8ac5-bcc6d57df5fd__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:26:22.362] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:26:22.363] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:26:22.363] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765566497876}
+[00:26:23.747] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:26:23.747] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:27:08.979] Server  LOG      ✓ Compiled in 69ms
+[00:27:15.997] Server  LOG      ✓ Compiled in 91ms
+[01:12:43.839] Server  LOG      ✓ Compiled in 56ms
+[01:12:53.364] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:12:53.364] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:16:34.430] Server  LOG      ✓ Compiled in 53ms
+[01:21:18.199] Server  LOG      ✓ Compiled in 130ms
+[01:28:40.675] Server  LOG      ✓ Compiled in 63ms
+[01:28:45.375] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:28:45.375] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:29:24.481] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.484] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.488] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.491] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.495] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.497] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.500] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.502] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.505] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.507] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.509] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.511] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.513] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.515] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.517] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.518] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.521] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.522] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.525] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.526] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.528] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.529] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.531] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.532] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.534] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.535] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.537] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.539] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:24.541] Server  LOG      ✓ Compiled in 78ms
+[01:29:24.649] Browser ERROR   ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:29:42.006] Browser ERROR   ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:29:54.304] Browser ERROR   ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:30:00.076] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:30:00.200] Browser ERROR   ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:30:00.769] Browser ERROR   ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:30:00.769] Browser ERROR   ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:30:00.975] Browser ERROR   ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:30:01.252] Browser ERROR   uncaughtError: Error: ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:30:01.620] Browser ERROR   ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:30:01.621] Browser ERROR   ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:30:21.895] Server  ERROR    ⨯ ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:30:22.040] Browser ERROR   uncaughtError: Error: ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:30:22.265] Browser ERROR   ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:30:22.265] Browser ERROR   ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:30:38.713] Browser ERROR   ./components/Navbar.tsx:6:1
+Module not found: Can't resolve './cart/CartDrawer'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import { useState } from "react";
+> 6 | import { CartDrawer } from "./cart/CartDrawer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export function Navbar() {
+  9 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:30:43.572] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_2e2bdb76-00f6-4f86-83fb-e2cb60208cbd__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[01:30:43.572] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:30:43.572] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:30:43.572] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765570359117}
+[01:30:52.576] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:30:52.576] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:32:58.594] Server  LOG      ✓ Compiled in 47ms
+[01:33:04.506] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:33:04.506] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:33:12.559] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:33:12.559] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:45:33.863] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:45:33.863] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:06:21.475] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:06:21.476] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:06:24.901] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:06:24.901] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:08:01.476] Server  LOG      ✓ Compiled in 79ms
+[03:08:04.052] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:08:04.052] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:08:22.373] Server  LOG      ✓ Compiled in 67ms
+[03:09:51.514] Server  LOG      ✓ Compiled in 35ms
+[03:10:17.705] Server  LOG      ✓ Compiled in 40ms
+[03:10:27.418] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:10:27.418] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:10:38.750] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:10:38.750] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:10:42.076] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:10:42.076] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:12:57.721] Server  LOG      ✓ Compiled in 38ms
+[03:17:44.095] Server  LOG      ✓ Compiled in 39ms
+[03:18:29.930] Server  LOG      ✓ Compiled in 58ms
+[03:21:34.861] Server  LOG      ✓ Compiled in 70ms
+[03:27:00.406] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_3f0aa67d-0e47-4339-87c4-70b017c35471__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[03:27:00.406] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:27:00.406] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[03:27:00.406] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765588901976}
+[03:27:02.078] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:27:02.079] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:28:30.638] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_e0202409-b43c-4f8f-8277-48cd5e87c3a4__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[03:28:30.638] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:28:30.639] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[03:28:30.639] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765588992219}
+[03:28:32.002] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:28:32.002] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:31:04.228] Server  LOG      ✓ Compiled in 41ms
+[03:31:18.893] Browser LOG     🧼✨ *Nuevo pedido*
+
+📦 *Productos:*
+
+[03:31:33.891] Browser LOG     🧼✨ *Nuevo pedido*
+
+📦 *Productos:*
+
+[03:33:12.465] Server  LOG      ✓ Compiled in 51ms
+[03:33:35.916] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
+                      <div
+                        hidden={true}
+-                       bis_skin_checked="1"
+                      >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="es"
+-                         bbai-tooltip-injected="true"
+                        >
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_4f68e1b2-bb82-4d27-97a5-e938b837ac5e__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                            ...
+                              <SegmentViewNode type="page" pagePath="page.tsx">
+                                <SegmentTrieNode>
+                                <Home>
+                                  <div
+                                    className="min-h-screen flex flex-col"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <Navbar>
+                                      <nav className="bg-white b...">
+                                        <div
+                                          className="container mx-auto px-4"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="flex items-center justify-between h-16"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+                                              className="flex items-center gap-3"
+-                                             bis_skin_checked="1"
+                                            >
+                                              <div
+                                                className="bg-gradient-to-r from-primary to-secondary p-2 rounded-lg"
+-                                               bis_skin_checked="1"
+                                              >
+                                              <div
+-                                               bis_skin_checked="1"
+                                              >
+                                            <div
+                                              className="hidden md:flex items-center gap-6"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="hidden md:flex items-center gap-3"
+-                                             bis_skin_checked="1"
+                                            >
+                                              <a>
+                                              <a>
+                                              <div
+                                                className="flex items-center"
+-                                               bis_skin_checked="1"
+                                              >
+                                            ...
+                                    <Container>
+                                      <div
+                                        className="max-w-screen-xl mx-auto p-2 md:px-4"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <ProductGrid>
+                                          <section className="py-12 md:p...">
+                                            <div
+                                              className="container mx-auto px-4"
+-                                             bis_skin_checked="1"
+                                            >
+                                              <div
+                                                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+-                                               bis_skin_checked="1"
+                                              >
+                                                <ProductCard product={{id:1,name:"Jab...", ...}}>
+                                                  <Card className="overflow-h..." onClick={function onClick}>
+                                                    <div
+                                                      data-slot="card"
+                                                      className="bg-card text-card-foreground flex flex-col gap-6 roun..."
+                                                      onClick={function onClick}
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <CardContent className="p-6">
+                                                        <div
+                                                          data-slot="card-content"
+                                                          className="p-6"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                          <div
+                                                            className="relative mb-6"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="relative aspect-square w-full overflow-hidden..."
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                          <div
+                                                            className="space-y-4"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="flex items-baseline gap-2"
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                            ...
+                                                  ...
+                                                <ProductCard product={{id:2,name:"Jab...", ...}}>
+                                                  <Card className="overflow-h..." onClick={function onClick}>
+                                                    <div
+                                                      data-slot="card"
+                                                      className="bg-card text-card-foreground flex flex-col gap-6 roun..."
+                                                      onClick={function onClick}
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <CardContent className="p-6">
+                                                        <div
+                                                          data-slot="card-content"
+                                                          className="p-6"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                          <div
+                                                            className="relative mb-6"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="relative aspect-square w-full overflow-hidden..."
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                          <div
+                                                            className="space-y-4"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="flex items-baseline gap-2"
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                            ...
+                                                  ...
+                                                <ProductCard product={{id:3,name:"Jab...", ...}}>
+                                                  <Card className="overflow-h..." onClick={function onClick}>
+                                                    <div
+                                                      data-slot="card"
+                                                      className="bg-card text-card-foreground flex flex-col gap-6 roun..."
+                                                      onClick={function onClick}
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <CardContent className="p-6">
+                                                        <div
+                                                          data-slot="card-content"
+                                                          className="p-6"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                          <div
+                                                            className="relative mb-6"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <Badge>
+                                                            <div
+                                                              className="relative aspect-square w-full overflow-hidden..."
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                          <div
+                                                            className="space-y-4"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="flex items-baseline gap-2"
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                            ...
+                                                  ...
+                                                <ProductCard product={{id:4,name:"Jab...", ...}}>
+                                                  <Card className="overflow-h..." onClick={function onClick}>
+                                                    <div
+                                                      data-slot="card"
+                                                      className="bg-card text-card-foreground flex flex-col gap-6 roun..."
+                                                      onClick={function onClick}
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <CardContent className="p-6">
+                                                        <div
+                                                          data-slot="card-content"
+                                                          className="p-6"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                          <div
+                                                            className="relative mb-6"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="relative aspect-square w-full overflow-hidden..."
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                          <div
+                                                            className="space-y-4"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="flex items-baseline gap-2"
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                            ...
+                                                  ...
+                                                <ProductCard product={{id:5,name:"Jab...", ...}}>
+                                                  <Card className="overflow-h..." onClick={function onClick}>
+                                                    <div
+                                                      data-slot="card"
+                                                      className="bg-card text-card-foreground flex flex-col gap-6 roun..."
+                                                      onClick={function onClick}
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <CardContent className="p-6">
+                                                        <div
+                                                          data-slot="card-content"
+                                                          className="p-6"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                          <div
+                                                            className="relative mb-6"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <Badge>
+                                                            <div
+                                                              className="relative aspect-square w-full overflow-hidden..."
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                          <div
+                                                            className="space-y-4"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="flex items-baseline gap-2"
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                            ...
+                                                  ...
+                                                <ProductCard product={{id:6,name:"Jab...", ...}}>
+                                                  <Card className="overflow-h..." onClick={function onClick}>
+                                                    <div
+                                                      data-slot="card"
+                                                      className="bg-card text-card-foreground flex flex-col gap-6 roun..."
+                                                      onClick={function onClick}
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <CardContent className="p-6">
+                                                        <div
+                                                          data-slot="card-content"
+                                                          className="p-6"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                          <div
+                                                            className="relative mb-6"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="relative aspect-square w-full overflow-hidden..."
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                          <div
+                                                            className="space-y-4"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="flex items-baseline gap-2"
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                            ...
+                                                  ...
+                                                <ProductCard product={{id:7,name:"Jab...", ...}}>
+                                                  <Card className="overflow-h..." onClick={function onClick}>
+                                                    <div
+                                                      data-slot="card"
+                                                      className="bg-card text-card-foreground flex flex-col gap-6 roun..."
+                                                      onClick={function onClick}
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <CardContent className="p-6">
+                                                        <div
+                                                          data-slot="card-content"
+                                                          className="p-6"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                          <div
+                                                            className="relative mb-6"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <Badge>
+                                                            <div
+                                                              className="relative aspect-square w-full overflow-hidden..."
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                          <div
+                                                            className="space-y-4"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="flex items-baseline gap-2"
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                            ...
+                                                  ...
+                                                <ProductCard product={{id:8,name:"Jab...", ...}}>
+                                                  <Card className="overflow-h..." onClick={function onClick}>
+                                                    <div
+                                                      data-slot="card"
+                                                      className="bg-card text-card-foreground flex flex-col gap-6 roun..."
+                                                      onClick={function onClick}
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <CardContent className="p-6">
+                                                        <div
+                                                          data-slot="card-content"
+                                                          className="p-6"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                          <div
+                                                            className="relative mb-6"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="relative aspect-square w-full overflow-hidden..."
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                          <div
+                                                            className="space-y-4"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="flex items-baseline gap-2"
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                            ...
+                                                  ...
+                                                <ProductCard product={{id:9,name:"Jab...", ...}}>
+                                                  <Card className="overflow-h..." onClick={function onClick}>
+                                                    <div
+                                                      data-slot="card"
+                                                      className="bg-card text-card-foreground flex flex-col gap-6 roun..."
+                                                      onClick={function onClick}
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <CardContent className="p-6">
+                                                        <div
+                                                          data-slot="card-content"
+                                                          className="p-6"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                          <div
+                                                            className="relative mb-6"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <Badge>
+                                                            <div
+                                                              className="relative aspect-square w-full overflow-hidden..."
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                          <div
+                                                            className="space-y-4"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="flex items-baseline gap-2"
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                            ...
+                                                  ...
+                                                <ProductCard product={{id:10,name:"Ja...", ...}}>
+                                                  <Card className="overflow-h..." onClick={function onClick}>
+                                                    <div
+                                                      data-slot="card"
+                                                      className="bg-card text-card-foreground flex flex-col gap-6 roun..."
+                                                      onClick={function onClick}
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <CardContent className="p-6">
+                                                        <div
+                                                          data-slot="card-content"
+                                                          className="p-6"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                          <div
+                                                            className="relative mb-6"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="relative aspect-square w-full overflow-hidden..."
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                          <div
+                                                            className="space-y-4"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="flex items-baseline gap-2"
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                            ...
+                                                  ...
+                                                <ProductCard product={{id:11,name:"Ja...", ...}}>
+                                                  <Card className="overflow-h..." onClick={function onClick}>
+                                                    <div
+                                                      data-slot="card"
+                                                      className="bg-card text-card-foreground flex flex-col gap-6 roun..."
+                                                      onClick={function onClick}
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <CardContent className="p-6">
+                                                        <div
+                                                          data-slot="card-content"
+                                                          className="p-6"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                          <div
+                                                            className="relative mb-6"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <Badge>
+                                                            <div
+                                                              className="relative aspect-square w-full overflow-hidden..."
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                          <div
+                                                            className="space-y-4"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="flex items-baseline gap-2"
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                            ...
+                                                  ...
+                                                <ProductCard product={{id:12,name:"Pr...", ...}}>
+                                                  <Card className="overflow-h..." onClick={function onClick}>
+                                                    <div
+                                                      data-slot="card"
+                                                      className="bg-card text-card-foreground flex flex-col gap-6 roun..."
+                                                      onClick={function onClick}
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <CardContent className="p-6">
+                                                        <div
+                                                          data-slot="card-content"
+                                                          className="p-6"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                          <div
+                                                            className="relative mb-6"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <Badge>
+                                                            <div
+                                                              className="relative aspect-square w-full overflow-hidden..."
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                          <div
+                                                            className="space-y-4"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="flex items-baseline gap-2"
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                            ...
+                                                  ...
+                                                <ProductCard product={{id:13,name:"Pr...", ...}}>
+                                                  <Card className="overflow-h..." onClick={function onClick}>
+                                                    <div
+                                                      data-slot="card"
+                                                      className="bg-card text-card-foreground flex flex-col gap-6 roun..."
+                                                      onClick={function onClick}
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <CardContent className="p-6">
+                                                        <div
+                                                          data-slot="card-content"
+                                                          className="p-6"
+-                                                         bis_skin_checked="1"
+                                                        >
+                                                          <div
+                                                            className="relative mb-6"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <Badge>
+                                                            <div
+                                                              className="relative aspect-square w-full overflow-hidden..."
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                          <div
+                                                            className="space-y-4"
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <div
+                                                              className="flex items-baseline gap-2"
+-                                                             bis_skin_checked="1"
+                                                            >
+                                                            ...
+                                                  ...
+                                        <CustomSoapSection>
+                                          <section className="py-12 md:p...">
+                                            <div
+                                              className="container mx-auto px-4"
+-                                             bis_skin_checked="1"
+                                            >
+                                              <div
+                                                className="grid md:grid-cols-2 gap-8 items-center"
+-                                               bis_skin_checked="1"
+                                              >
+                                                <div
+                                                  className="relative aspect-video md:aspect-square rounded-xl overflo..."
+-                                                 bis_skin_checked="1"
+                                                >
+                                                <div
+                                                  className="space-y-6"
+-                                                 bis_skin_checked="1"
+                                                >
+                                    <Footer>
+                                      <footer id="contacto" className="bg-gradien...">
+                                        <div
+                                          className="container mx-auto px-4 max-w-7xl"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12 text..."
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+-                                             bis_skin_checked="1"
+                                            >
+                                              <h3>
+                                              <div
+                                                className="space-y-3 mb-6"
+-                                               bis_skin_checked="1"
+                                              >
+                                              ...
+                                          <div
+                                            className="border-t border-white/20 py-6 text-center text-sm text-white/80"
+-                                           bis_skin_checked="1"
+                                          >
+                              ...
+                            <Fe position="bottom-right" toastOptions={{style:{...}}}>
+                              <div
+                                data-rht-toaster=""
+                                style={{position:"fixed",zIndex:9999,top:16,left:16,right:16,bottom:16,pointerEvents:"none"}}
+                                className={undefined}
+                                onMouseEnter={function}
+                                onMouseLeave={function}
+-                               bis_skin_checked="1"
+                              >
+                            ...
+                  ...
+
+[03:33:36.058] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:33:36.058] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[03:33:36.058] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765589297616}
+[03:33:41.824] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:33:41.824] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:33:43.891] Browser LOG     🧼✨ *Nuevo pedido*
+
+📦 *Productos:*
+
+[03:33:56.869] Server  LOG      ✓ Compiled in 64ms
+[03:34:12.880] Server  LOG      ✓ Compiled in 36ms

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useCartStore } from "@/store/cart-store";
 import {
@@ -36,6 +36,29 @@ export function CartDrawer() {
 
     return () => clearTimeout(timer);
   }, [items.length]);
+
+  const handleCheckout = () => {
+    if (items.length === 0) return;
+
+    const phone = "+543704678598";
+
+    let message = "🧼✨ *Nuevo pedido*\n\n" + "📦 *Productos:*\n";
+
+    items.forEach((item) => {
+      message += `• ${item.name} × ${item.quantity} — $${item.price}\n`;
+    });
+
+    message +=
+      "\n💰 *Total:* $" +
+      totalPrice.toFixed(2) +
+      "\n\n" +
+      "🙏 ¡Gracias por apoyar lo artesanal!";
+
+    const url =
+      "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+
+    window.open(url, "_blank");
+  };
 
   return (
     <Sheet>
@@ -86,7 +109,7 @@ export function CartDrawer() {
                   <div className="flex-1">
                     <p className="font-medium">{item.name}</p>
                     <p className="text-sm text-muted-foreground">
-                      €{item.price.toFixed(2)}
+                      ${item.price.toFixed(2)}
                     </p>
 
                     <div className="flex items-center gap-2 mt-2">
@@ -128,15 +151,13 @@ export function CartDrawer() {
               <div className="flex items-center justify-between">
                 <span className="font-semibold text-lg">Total:</span>
                 <span className="text-xl font-bold">
-                  €{totalPrice.toFixed(2)}
+                  ${totalPrice.toFixed(2)}
                 </span>
               </div>
 
               <Button
                 className="w-full bg-primary text-white rounded-xl"
-                onClick={() =>
-                  toast.success("Finalizar compra (luego agregamos el flujo)")
-                }
+                onClick={handleCheckout}
               >
                 Finalizar compra
               </Button>
