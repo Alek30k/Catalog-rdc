@@ -42,17 +42,12 @@ export function CartDrawer() {
 
     const phone = "+543704678598";
 
-    let message = "🧼✨ *Nuevo pedido*\n\n" + "📦 *Productos:*\n";
+    let message =
+      "*¡Hola! Quiero hacer un pedido.* 🧼✨ \n\n" + "📦 *Productos:*\n";
 
     items.forEach((item) => {
       message += `• ${item.name} × ${item.quantity} — $${item.price}\n`;
     });
-
-    message +=
-      "\n💰 *Total:* $" +
-      totalPrice.toFixed(2) +
-      "\n\n" +
-      "🙏 ¡Gracias por apoyar lo artesanal!";
 
     const url =
       "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
