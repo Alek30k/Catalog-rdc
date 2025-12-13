@@ -43,11 +43,13 @@ export function CartDrawer() {
     const phone = "+543704678598";
 
     let message =
-      "*¡Hola! Quiero hacer un pedido.* 🧼✨ \n\n" + "📦 *Productos:*\n";
+      "*¡Hola! Quiero hacer un pedido.*🧼✨ \n\n" + "📦 *Productos:*\n";
 
     items.forEach((item) => {
       message += `• ${item.name} × ${item.quantity} — $${item.price}\n`;
     });
+
+    message += "\n💰 *Total:* $" + totalPrice.toFixed(2) + "\n\n";
 
     const url =
       "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
