@@ -1,19 +1,21 @@
 "use client";
 
-import { Gift, Menu, ShoppingCart, Phone, Mail } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Gift, Menu, Phone, Mail } from "lucide-react";
 import { useState } from "react";
 import { CartDrawer } from "./cart/CartDrawer";
+import { SearchInput } from "./SearchInput";
+import { useSearchStore } from "@/store/search-store";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { search, setSearch } = useSearchStore();
 
   return (
     <nav className="bg-white border-b border-border sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 gap-4">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 shrink-0">
             <div className="bg-gradient-to-r from-primary to-secondary p-2 rounded-lg">
               <Gift className="w-6 h-6 text-white" />
             </div>
@@ -25,35 +27,12 @@ export function Navbar() {
             </div>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
-            <a
-              href="#inicio"
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-            >
-              Inicio
-            </a>
-            <a
-              href="#productos"
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-            >
-              Productos
-            </a>
-            <a
-              href="#personalizados"
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-            >
-              Personalizados
-            </a>
-            <a
-              href="#contacto"
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-            >
-              Contacto
-            </a>
+          {/* Search - Desktop */}
+          <div className="hidden md:flex flex-1 justify-center">
+            <SearchInput value={search} onChange={setSearch} />
           </div>
 
-          {/* Desktop Actions */}
+          {/* Actions */}
           <div className="hidden md:flex items-center gap-3">
             <a
               href="tel:+1234567890"
@@ -67,9 +46,7 @@ export function Navbar() {
             >
               <Mail className="w-5 h-5" />
             </a>
-            <div className="flex items-center">
-              <CartDrawer />
-            </div>
+            <CartDrawer />
           </div>
 
           {/* Mobile Menu Button */}
@@ -82,55 +59,25 @@ export function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Search */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border">
-            <div className="flex flex-col gap-3">
+          <div className="md:hidden py-4 border-t border-border space-y-4">
+            <SearchInput value={search} onChange={setSearch} />
+
+            <div className="flex items-center gap-3 pt-3 border-t border-border">
               <a
-                href="#inicio"
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
-                onClick={() => setIsMenuOpen(false)}
+                href="tel:+1234567890"
+                className="text-muted-foreground hover:text-primary transition-colors"
               >
-                Inicio
+                <Phone className="w-5 h-5" />
               </a>
               <a
-                href="#productos"
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
-                onClick={() => setIsMenuOpen(false)}
+                href="mailto:info@rdcjabones.com"
+                className="text-muted-foreground hover:text-primary transition-colors"
               >
-                Productos
+                <Mail className="w-5 h-5" />
               </a>
-              <a
-                href="#personalizados"
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Personalizados
-              </a>
-              <a
-                href="#contacto"
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contacto
-              </a>
-              <div className="flex items-center gap-3 pt-2 border-t border-border mt-2">
-                <a
-                  href="tel:+1234567890"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  <Phone className="w-5 h-5" />
-                </a>
-                <a
-                  href="mailto:info@rdcjabones.com"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  <Mail className="w-5 h-5" />
-                </a>
-                <div className="flex items-center ">
-                  <CartDrawer />
-                </div>
-              </div>
+              <CartDrawer />
             </div>
           </div>
         )}

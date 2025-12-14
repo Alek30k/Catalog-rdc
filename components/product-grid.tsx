@@ -1,4 +1,7 @@
+"use client";
+
 import { ProductCard } from "@/components/product-card";
+import { useSearchStore } from "@/store/search-store";
 
 const products = [
   {
@@ -160,11 +163,25 @@ const products = [
 ];
 
 export function ProductGrid() {
+  const search = useSearchStore((state) => state.search);
+
+  const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  if (filteredProducts.length === 0) {
+    return (
+      <p className="text-center text-muted-foreground py-10">
+        No se encontraron productos 🧼
+      </p>
+    );
+  }
+
   return (
     <section className="py-12 md:py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {products.map((product) => (
+          {filteredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
