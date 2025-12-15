@@ -828,41 +828,40 @@ const products = [
     },
     {
         id: 4,
-        name: "Jabón de Limón",
+        name: "Jabón de Café",
         price: 2000,
-        image: "/yellow-lemon-soap-three-pieces-stacked.jpg",
-        discount: null,
+        image: "/cafe.png",
         features: [
-            "🌿 Regenera la piel",
-            "🌿 Protege contra irritaciones",
-            "🌿 Alivia la resequedad",
-            "🌿 Nutrición intensa"
+            "🌿 Exfolia la piel eliminando células muertas ",
+            "🌿 Estimula la circulación ",
+            "🌿 Tonifica la piel",
+            "🌿 Aroma revitalizante"
         ]
     },
     {
         id: 5,
-        name: "Jabón de Avena",
+        name: "Jabón de Aloé Vera",
         price: 2000,
-        image: "/oatmeal-soap-beige-pink-gradient-flower-shape.jpg",
+        image: "/aloe.png",
         discount: 5,
         features: [
-            "🌿 Regenera la piel",
-            "🌿 Protege contra irritaciones",
-            "🌿 Alivia la resequedad",
-            "🌿 Nutrición intensa"
+            "🌿 Cicatriza heridas menores",
+            "🌿 Refresca y calma",
+            "🌿 Hidrata sin engrasar",
+            "🌿 Perfecto después del sol"
         ]
     },
     {
         id: 6,
-        name: "Jabón de Lavanda",
+        name: "Jabón de Miel",
         price: 2200,
-        image: "/purple-lavender-soap-round-flower-shape.jpg",
+        image: "/miel.png",
         discount: null,
         features: [
-            "🌿 Regenera la piel",
-            "🌿 Protege contra irritaciones",
-            "🌿 Alivia la resequedad",
-            "🌿 Nutrición intensa"
+            "🌿 Hidrata profundamente la piel",
+            "🌿 Propiedades antibacterianas y calmantes",
+            "🌿 Aporta suavidad y elasticidad",
+            "🌿 Restaura el brillo natural de la piel"
         ]
     },
     {
@@ -966,7 +965,7 @@ function ProductGrid() {
             children: "No se encontraron productos 🧼"
         }, void 0, false, {
             fileName: "[project]/components/product-grid.tsx",
-            lineNumber: 187,
+            lineNumber: 186,
             columnNumber: 7
         }, this);
     }
@@ -980,22 +979,22 @@ function ProductGrid() {
                         product: product
                     }, product.id, false, {
                         fileName: "[project]/components/product-grid.tsx",
-                        lineNumber: 198,
+                        lineNumber: 197,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/product-grid.tsx",
-                lineNumber: 196,
+                lineNumber: 195,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/product-grid.tsx",
-            lineNumber: 195,
+            lineNumber: 194,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/product-grid.tsx",
-        lineNumber: 194,
+        lineNumber: 193,
         columnNumber: 5
     }, this);
 }
