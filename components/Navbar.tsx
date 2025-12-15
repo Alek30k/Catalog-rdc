@@ -63,7 +63,6 @@ export function Navbar() {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border space-y-4">
             <SearchInput value={search} onChange={setSearch} />
-
             <div className="flex items-center gap-3 pt-3 border-t border-border">
               <a
                 href="tel:+1234567890"

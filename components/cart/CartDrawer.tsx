@@ -14,6 +14,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import toast from "react-hot-toast";
 import { Trash2, Plus, Minus, ShoppingCart } from "lucide-react";
+import Container from "../Container";
 
 export function CartDrawer() {
   const {
